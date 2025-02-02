@@ -10,3 +10,4 @@ setuptools==75.3.0
 threadpoolctl==3.5.0
 tqdm==4.66.6
 wheel==0.44.0
+nltk
