@@ -25,8 +25,8 @@ def transform_text(text):
     return " ".join(text)
 
 # Dynamic paths for vectorizer.pkl and model.pkl
-vectorizer_path = os.path.join(os.getcwd(), 'sms-spam-detection', 'vectorizer.pkl')
-model_path = os.path.join(os.getcwd(), 'sms-spam-detection', 'model.pkl')
+vectorizer_path = os.path.join(os.path.dirname(__file__), 'vectorizer.pkl')
+model_path = os.path.join(os.path.dirname(__file__), 'model.pkl')
 
 tk = pickle.load(open(vectorizer_path, 'rb'))
 model = pickle.load(open(model_path, 'rb'))
